@@ -46,7 +46,7 @@ st.title("Chatbot by Matthieu GABAS")
 
 # uploaded_file = st.file_uploader("Upload a PDF", type="pdf") #If I want to make it uploaded
 
-uploaded_file = "./cv.pdf"
+uploaded_file = "https://matthieu-gabas.ovh/cv.pdf"
 if uploaded_file is not None:
     # Extract text from the PDF using PyPDF2
     extracted_text = extract_text_with_pypdf2(uploaded_file)
