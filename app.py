@@ -68,7 +68,7 @@ if uploaded_file is not None:
     # Initialize Replicate Llama2 Model
     llm = Replicate(
         model="a16z-infra/llama13b-v2-chat:df7690f1994d94e96ad9d568eac121aecf50684a0b0963b25a41cc40061269e5",
-        model_kwargs={"temperature": 0.75, "max_length": 3000}
+        model_kwargs={"temperature": 0.75, "max_length": 2000}
 
     )
 
