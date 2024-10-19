@@ -93,7 +93,6 @@ if uploaded_file is not None:
             st.write('Exiting')
             sys.exit()
         result = qa_chain.invoke({'question': query, 'chat_history': st.session_state['chat_history']})
-        st.write('Answer: ' + result['answer'])
         st.session_state['chat_history'].append((query, result['answer']))
 
     # Display the chat history
