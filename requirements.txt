@@ -12,3 +12,4 @@ replicate
 ctransformers
 langchain-huggingface
 sentance-transformer
+python-dotenv
