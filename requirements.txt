@@ -1,0 +1,14 @@
+langchain
+streamlit
+python-dotenv
+langchain-community
+ipykernel
+PyPDF2
+tiktoken
+huggingface_hub
+pinecone-client
+pinecone
+replicate
+ctransformers
+langchain-huggingface
+sentance-transformer
