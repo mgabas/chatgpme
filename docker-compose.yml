@@ -1,19 +1,7 @@
-version: '3.8'
-
+version: '3'
 services:
-  app:
-    build: .
-    ports:
-      - "8501:8501"
-    environment:
-      - REPLICATE_API_TOKEN=${REPLICATE_API_TOKEN}
-      - PINECONE_API_KEY=${PINECONE_API_KEY}
-    volumes:
-      - .:/app
-    depends_on:
-      - pinecone
-
-  pinecone:
-    image: pinecone/pinecone:latest
-    environment:
-      - PINECONE_API_KEY=${PINECONE_API_KEY}
+    python:
+        build:
+            context: .
+        ports:
+        - '8501:8501'
